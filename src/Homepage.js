@@ -8,8 +8,12 @@ import { Hero } from './Hero';
 function App() {
   return (
     <>
-      <Header><p>Otra vista</p>
+      <Header>
+        <Nav></Nav>
       </Header>
+      <Main>
+        <Hero></Hero>
+    </Main>
       <Footer></Footer>
     </>
   );

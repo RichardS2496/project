@@ -1,10 +1,9 @@
 import React from 'react';
 
-function Main() {
+function Main({children}) {
   return (
     <main>
-      <h2>¡Bienvenido a nuestro sitio web!</h2>
-      <p>Este es el contenido principal de la página.</p>
+      {children}
     </main>
   );
 }

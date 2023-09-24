@@ -5,7 +5,7 @@ import Main from './Main';
 import Footer from './Footer';
 import { Hero } from './Hero';
 
-function App() {
+function Bookingpage () {
   return (
     <>
       <Header><p>Otra vista</p>
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default Bookingpage;

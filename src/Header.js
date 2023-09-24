@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header() {
+function Header({children}) {
   return (
     <header>
-      <img className='header-img' src="https://littlelemonrestaurantankitamwebsiteproject.netlify.app/static/media/Logo.370f832fad423c516d56.png" alt="Logo de Little Lemon" />
+      {children}
     </header>
   );
 }
