@@ -90,6 +90,9 @@ p{
     height: 3em;
     width: 12em;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-hero:hover {
