@@ -189,3 +189,161 @@ p{
   font-family: Karla,sans-serif;
   color: #333;
 }
+
+.testimonials-container {
+  margin: 100px 0;
+  height: 500px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 150px;
+  width: 300px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.title-testimonials h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: Markazi Text,serif;
+  text-align: center;
+}
+
+.title-testimonials h5 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  font-family: Karla,sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.img-testi {
+  width: 70px;
+  border-radius: 100%;
+}
+
+.testimonial-card h3 {
+  font-size: 1.5rem;
+  font-family: Markazi Text,serif;
+}
+
+.texts-testi {
+  margin-top: 20px;
+  gap: 2px;
+}
+
+.texts-testi p {
+  color: #000;
+  font-size: 14px;
+  font-family: Karla,sans-serif;
+  margin: 10px 0;
+}
+
+.rating {
+  width: 100px;
+}
+
+.about-container {
+  width: 100%;
+  margin: 40px;
+  margin-left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.img-02 {
+  width: 420px;
+  border-radius: 20px;
+
+}
+.texts-about {
+  width: 50%;
+
+}
+
+.texts-about p {
+  color: #333;
+  font-size: 16px;
+  font-family: Karla,sans-serif;
+}
+
+.texts-about h2 {
+  color: #333;
+  font-size: 2rem;
+  font-family: Markazi Text,serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-color: hsl(96, 100%, 85%);
+}
+
+.footer-container p {
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  font-family: Karla,sans-serif;
+}
+
+.footer-container li {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #495e57;
+  width: 100%;
+  padding: 100px 0;
+}
+
+label {
+  color: #fff;
+  font-family: Markazi Text,serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-form {
+  padding: 10px;
+  background-color: #f4ce14;
+  color: #000;
+  border-radius: 20px;
+  font-family: Karla,sans-serif;
+  border: none;
+}
+
+.btn-form:hover{
+  background-color: #000;
+  color: #f4ce14;
+  cursor: pointer;
+}

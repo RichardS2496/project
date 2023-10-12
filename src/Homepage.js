@@ -6,7 +6,7 @@ import Footer from './Footer';
 import { Hero } from './Hero';
 import { Highlights } from './Highlights';
 import { Testimonials } from './Testimonials';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { About } from './About';
 
 
 function App() {
@@ -19,8 +19,9 @@ function App() {
         <Hero/>
         <Highlights/>
         <Testimonials/>
+        <About/>
     </Main>
-      <Footer></Footer>
+      <Footer/>
     </>
   );
 }

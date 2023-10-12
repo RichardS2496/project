@@ -1,9 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
+import BookingForm from './BookingForm';
+
+
 
 function Main({children}) {
+  const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
+  function submitForm (data) {
+    fetch("https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js")
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+  }
   return (
     <main>
       {children}
+      <BookingForm setAvailableTimes={setAvailableTimes} submitForm={submitForm} availableTimes={availableTimes} />
     </main>
   );
 }
