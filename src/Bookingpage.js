@@ -4,15 +4,18 @@ import Nav from './Nav';
 import Main from './Main';
 import Footer from './Footer';
 import { Hero } from './Hero';
+import BookingForm from './BookingForm'
 
-function App() {
+function Bookingpage () {
   return (
     <>
-      <Header><p>Otra vista</p>
+      <Header>
+        <Nav/>
       </Header>
+      <BookingForm/>
       <Footer></Footer>
     </>
   );
 }
 
-export default App;
+export default Bookingpage;

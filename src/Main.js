@@ -1,10 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
+import BookingForm from './BookingForm';
+import {useNavigate} from 'react-router-dom'
 
-function Main() {
+
+
+function Main({children}) {
+  const navigate = useNavigate()
+  const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
+  function submitForm (data) {
+    navigate("/confirmed")
+    fetch("https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js")
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+  }
   return (
     <main>
-      <h2>¡Bienvenido a nuestro sitio web!</h2>
-      <p>Este es el contenido principal de la página.</p>
+      {children}
+      <BookingForm setAvailableTimes={setAvailableTimes} submitForm={submitForm} availableTimes={availableTimes} />
     </main>
   );
 }
